@@ -12,18 +12,30 @@ For business inquiries, please submit the [NVIDIA research licensing form](https
 --------------------------------------
 
 ## Installation
-We offer two ways to setup the environment:
-1. We provide prebuilt Docker images, where
-    - `docker.io/chenhsuanlin/colmap:3.8` is for running COLMAP and the data preprocessing scripts. This includes the prebuilt COLMAP library (CUDA-supported).
+We offer to setup the environment:
+1. We provide this through WSL (Windows Subsystem for Linux)
+    - First install CUDA Software on the Windows Machine (Nvidia Driver installation).
+    - Then install WSL on the system by opening CMD and type `wsl --intsall` then restart and setup linux.
+    - Then Close the CMD and open again and type `wsl` which it will go to WSL.
+    - After that install Miniconda by pasting each command one by one or visit the website for future changes on how to install [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/).
+    ```bash
+    mkdir -p ~/miniconda3
+    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+    bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+    rm -rf ~/miniconda3/miniconda.sh
+    ~/miniconda3/bin/conda init bash
+    ```
+    - After installation Close the CMD and open it again with `wsl` command this it will be showing (base).
+    - now lets install some dependenties by
+    ```bash
+    sudo apt update && sudo apt upgrade
+    sudo apt-get install build-essential git g++
+    ```
+    - 
     - `docker.io/chenhsuanlin/neuralangelo:23.04-py3` is for running the main Neuralangelo pipeline.
 
     The corresponding Dockerfiles can be found in the `docker` directory.
-2. The conda environment for Neuralangelo. Install the dependencies and activate the environment `neuralangelo` with
-    ```bash
-    conda env create --file neuralangelo.yaml
-    conda activate neuralangelo
-    ```
-For COLMAP, alternative installation options are also available on the [COLMAP website](https://colmap.github.io/).
+
 
 --------------------------------------
 
