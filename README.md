@@ -1,6 +1,6 @@
 # Neuralangelo
 This is the fork of official **Neuralangelo: High-Fidelity Neural Surface Reconstruction**.
-
+To help installation on Windows Machine
 
 ### [Project page](https://research.nvidia.com/labs/dir/neuralangelo/) | [Paper](https://arxiv.org/abs/2306.03092/) | [Colab notebook](https://colab.research.google.com/drive/13u8DX9BNzQwiyPPCB7_4DbSxiQ5-_nGF)
 
