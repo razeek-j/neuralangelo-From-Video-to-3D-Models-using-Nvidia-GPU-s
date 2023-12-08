@@ -14,7 +14,7 @@ For business inquiries, please submit the [NVIDIA research licensing form](https
 ## Installation
 We offer to setup the environment:
 1. We provide this through WSL (Windows Subsystem for Linux)
-    - First install CUDA Software on the Windows Machine (Nvidia Driver installation).
+    - First install CUDA 11.8 Software on the Windows Machine (Nvidia Driver installation).
     - Then install WSL on the system by opening CMD and type `wsl --intsall` then restart and setup linux.
     - Then Close the CMD and open again and type `wsl` which it will go to WSL.
     - After that install Miniconda by pasting each command one by one or visit the website for future changes on how to install [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/).
@@ -31,7 +31,19 @@ We offer to setup the environment:
     sudo apt update && sudo apt upgrade
     sudo apt-get install build-essential git g++
     ```
-    - 
+    - Then download or clone the project and open the location on CMS WSL environment using cd command.
+    - The we create neuralangelo environment using commands
+
+    ```bash
+    conda env create --file neuralangelo.yaml
+    conda activate neuralangelo
+    ```
+    - From (base) to (neuralangelo) after these commands that means you successfully activated the environment.
+    - Then execute these commands
+    ```bash
+    export LIBRARY_PATH="/usr/lib/wsl/lib:$LIBRARY_PATH"
+    pip install -r requirements.txt
+    ```
     - `docker.io/chenhsuanlin/neuralangelo:23.04-py3` is for running the main Neuralangelo pipeline.
 
     The corresponding Dockerfiles can be found in the `docker` directory.
