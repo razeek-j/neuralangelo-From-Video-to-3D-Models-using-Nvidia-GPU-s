@@ -1,14 +1,6 @@
 # Neuralangelo
-This is the official implementation of **Neuralangelo: High-Fidelity Neural Surface Reconstruction**.
+This is the fork of official **Neuralangelo: High-Fidelity Neural Surface Reconstruction**.
 
-[Zhaoshuo Li](https://mli0603.github.io/),
-[Thomas Müller](https://tom94.net/),
-[Alex Evans](https://research.nvidia.com/person/alex-evans),
-[Russell H. Taylor](https://www.cs.jhu.edu/~rht/),
-[Mathias Unberath](https://mathiasunberath.github.io/),
-[Ming-Yu Liu](https://mingyuliu.net/),
-[Chen-Hsuan Lin](https://chenhsuanlin.bitbucket.io/)  
-IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2023
 
 ### [Project page](https://research.nvidia.com/labs/dir/neuralangelo/) | [Paper](https://arxiv.org/abs/2306.03092/) | [Colab notebook](https://colab.research.google.com/drive/13u8DX9BNzQwiyPPCB7_4DbSxiQ5-_nGF)
 
