@@ -12,8 +12,8 @@ For business inquiries, please submit the [NVIDIA research licensing form](https
 --------------------------------------
 
 ## Installation
-We offer to setup the environment:
-1. We provide this through WSL (Windows Subsystem for Linux)
+I offer to setup the environment:
+1. I provide this through WSL (Windows Subsystem for Linux)
     - First install CUDA 11.8 Software on the Windows Machine (Nvidia Driver installation).
     - Then install WSL on the system by opening CMD and type `wsl --intsall` then restart and setup linux.
     - Then Close the CMD and open again and type `wsl` which it will go to WSL.
