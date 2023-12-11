@@ -60,9 +60,9 @@ We offer to setup the environment:
     ```
     - It should show your GPU name if not update your GPU drivers on windows install CUDA on Windows then redo the process
     - So after pip install -r requirments.txt without errors we will go forward to data preprocessing.
-    - `docker.io/chenhsuanlin/neuralangelo:23.04-py3` is for running the main Neuralangelo pipeline.
+    
 
-    The corresponding Dockerfiles can be found in the `docker` directory.
+    The process should continue for the result by checking down data preparation and Run Neuralangelo.
 
 
 --------------------------------------
