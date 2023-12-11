@@ -46,6 +46,20 @@ We offer to setup the environment:
     export LIBRARY_PATH="/usr/lib/wsl/lib:$LIBRARY_PATH"
     pip install -r requirements.txt
     ```
+    - But if you find any error at this stage mainly tinycuda issues it will be because of pytorch
+    - So you need to install pytorch and verify it is working with cuda and it is connected with your nvidia GPU
+    - To install and check follow this command
+    ```bash
+    pip install torch --no-cache-dir
+    python3
+    ```
+    - We will check in the python(>>> it will show this symbol in terminal) by typing this code.
+    ```bash
+    import torch
+    torch.cuda.get_device_name(0)
+    ```
+    - It should show your GPU name if not update your GPU drivers on windows install CUDA on Windows then redo the process
+    - So after pip install -r requirments.txt without errors we will go forward to data preprocessing.
     - `docker.io/chenhsuanlin/neuralangelo:23.04-py3` is for running the main Neuralangelo pipeline.
 
     The corresponding Dockerfiles can be found in the `docker` directory.
